@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function addImages() {
     const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
     fetch(imgUrl)
-    .then(resp => resp(json))
+    .then(res=> res.json())
+    .then(results => {
+      results.messages.forEach(image => addimage(image))
+    })
   }
 
 }
