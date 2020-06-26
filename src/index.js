@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(imgUrl)
     .then(res=> res.json())
     .then(results => {
-      results.messages.forEach(image => addimage(image))
-      console.log(image);
+      // results.messages.forEach(image => addimage(image))
+      console.log(results);
     })
   }
 
