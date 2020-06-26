@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
     fetch(imgUrl)
     .then(res=> res.json())
-    .then(results => {
+    // .then(results => {
       // results.messages.forEach(image => addimage(image))
-      console.log(results);
-    })
+      console.log(json);
+    // })
   }
 
 })
